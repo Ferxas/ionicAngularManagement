@@ -1,0 +1,14 @@
+<ion-content class="ion-padding">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-inpuit type="email" formControlName="email"></ion-inpuit>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+    <ion-button expand="block" type="submit" [disabled]="!loginForm.valid">Iniciar sesión</ion-button>
+  </form>
+      <ion-button expand="block" fill="clear" routerLink="/register">Registrarse</ion-button>
+</ion-content>
