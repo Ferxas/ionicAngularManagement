@@ -1,0 +1,7 @@
+{
+  "name": "marianoangularionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
